@@ -16,6 +16,7 @@
           "uv pip install librosa==0.10.1 soundfile==0.12.1 numba==0.58.1 --only-binary=:all:",
           "uv pip install coqpit==0.0.17",
           "uv pip install trainer==0.0.20 pydantic==1.10.12 jsonlines pyyaml matplotlib",
+          "uv pip install pysbd==0.3.4",
           "uv pip install gradio==3.50.2 jinja2==3.1.2 markupsafe==2.1.3 --force-reinstall",
           "uv pip install --no-deps -r requirements.txt"
         ]
@@ -35,4 +36,3 @@
       "params": { "html": "Click the 'start' tab to get started!" }
     }
   ]
-}
