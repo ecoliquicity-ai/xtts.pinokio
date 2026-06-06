@@ -11,6 +11,7 @@
       "params": {
         "venv": "env",
         "message": [
+          "uv pip install torch==2.1.0+cpu torchvision==0.16.0+cpu torchaudio==2.1.0+cpu -f https://download.pytorch.org/whl/cpu/torch_stable.html --force-reinstall",
           "uv pip install gradio==3.50.2 jinja2==3.1.2 --force-reinstall",
           "uv pip install -r requirements.txt"
         ]
@@ -20,7 +21,9 @@
       "method": "script.start",
       "params": {
         "uri": "torch.js",
-        "venv": "env"
+        "params": {
+          "venv": "env"
+        }
       }
     },
     {
